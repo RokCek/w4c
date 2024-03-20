@@ -18,7 +18,7 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor, KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.cross_decomposition import PLSRegression
-from skmultiflow.trees import RegressionHoeffdingTree, RegressionHAT, HoeffdingTree, HAT
+from skmultiflow.trees import HoeffdingTreeRegressor, RegressionHAT, HoeffdingTree, HAT
 from lib.bagging import BaggingRegression
 from lib.genetic_selector import GeneticSelector
 from lib.genetic_selection_cv import GeneticSelectionCV
@@ -131,7 +131,7 @@ ML_METHODS_REG = [
     },
     # Streaming
     {
-        'name': 'RegressionHoeffdingTree',
+        'name': 'HoeffdingTreeRegressor',
         'description': 'Hoeffding Tree Regressor',
         'params': {
             'leaf_prediction': 'perceptron',
@@ -165,7 +165,7 @@ ML_METHODS_REG = [
         'description': 'Hoeffding Tree Bagging Regressor',
         'params': {
             'base_estimator': {
-                'name': "RegressionHoeffdingTree",
+                'name': "HoeffdingTreeRegressor",
                 'params': {
                     'leaf_prediction': 'perceptron',
                     'random_state': "eval:random_seed"

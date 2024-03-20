@@ -35,7 +35,7 @@
                 "SVR",                          // Epsilon-Support Vector Regression
                 "MLPRegressor",                 // Multi-Layer Perceptron Regressor
                 "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
-                "RegressionHoeffdingTree",      // Hoeffding Tree Regressor
+                "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
                 "RegressionHAT",                // Hoeffding Adaptive Tree Regressor
                 // "BaggingRegressionHT",          // Hoeffding Tree Bagging Regressor
                 // "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
