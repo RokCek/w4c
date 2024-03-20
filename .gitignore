@@ -24,3 +24,4 @@ scripts/data/weather/data.json
 .local/
 venv/
 scripts/analyse.py
+.vs/
