@@ -5,6 +5,10 @@
     "\\scripts\\experiments",
     "\\scripts\\lib"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\.gitignore",
+=======
+  "SelectedNode": "\\scripts\\lib\\experiment.py",
+>>>>>>> 8327b9acf685f55de6aaea05a15841c07ad1310e
   "PreviewInSolutionExplorer": false
 }
