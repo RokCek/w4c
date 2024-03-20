@@ -1,6 +1,6 @@
 [
     {
-        "name": "Groundwater levels classification with GA selected features",
+        "name": "Groundwater levels classification test",
         "description": "Modeling daily changes of groundwater levels",
         "water_type": "ground",
         "sensors": [
@@ -41,16 +41,16 @@
             //     // "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
             // ],
             "cls": [
-                "LogisticRegression",           // Logistic Regression
-                "DecisionTreeClassifier",       // Decision Tree Classifier
-                "ExtraTreeClassifier",          // Extremely Randomized Tree Classifier
+              //  "LogisticRegression",           // Logistic Regression
+             //   "DecisionTreeClassifier",       // Decision Tree Classifier
+              //  "ExtraTreeClassifier",          // Extremely Randomized Tree Classifier
                 "RandomForestClassifier",       // Random Forest Classifier
-                "SVC",                          // C-Support Vector Classification
-                "KNeighborsClassifier",         // k-Nearest Neighbors Classifier
-                "Perceptron",                   // Perceptron Classifier
-                "GaussianNB",                   // Gaussian Naïve Bayes Classifier
-              //Tree and HAT have errors in geneticselectioncv  "HoeffdingTree",                // Hoeffding Tree Classifier
-              //  "HAT",                          // Hoeffding Adaptive Tree Classifier
+               // "SVC",                          // C-Support Vector Classification
+               // "KNeighborsClassifier",         // k-Nearest Neighbors Classifier
+               // "Perceptron",                   // Perceptron Classifier
+               // "GaussianNB",                   // Gaussian Naïve Bayes Classifier
+               // "HoeffdingTree",                // Hoeffding Tree Classifier
+               // "HAT",                          // Hoeffding Adaptive Tree Classifier
             ]
         },
         "eval_methods": {

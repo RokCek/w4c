@@ -35,14 +35,14 @@
             //     "SVR",                          // Epsilon-Support Vector Regression
             //     "MLPRegressor",                 // Multi-Layer Perceptron Regressor
             //     "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
-            //     "RegressionHoeffdingTree",      // Hoeffding Tree Regressor
+            //     "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
             //     "RegressionHAT",                // Hoeffding Adaptive Tree Regressor
             //     {
             //         "name": "BaggingRegression",
             //         "description": "Hoeffding Tree Bagging Regressor",
             //         "params": {
             //             "base_estimator": {
-            //                 "name": "RegressionHoeffdingTree",
+            //                 "name": "HoeffdingTreeRegressor",
             //                 "params": {
             //                     "leaf_prediction": "perceptron",
             //                     "random_state": "eval:random_seed"

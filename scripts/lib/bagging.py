@@ -1,14 +1,14 @@
 import copy as cp
 
 from skmultiflow.core import BaseSKMObject, RegressorMixin, MetaEstimatorMixin
-from skmultiflow.trees import RegressionHoeffdingTree
+from skmultiflow.trees import HoeffdingTreeRegressor
 from skmultiflow.utils.utils import *
 from skmultiflow.utils import check_random_state
 
 
 class BaggingRegression(BaseSKMObject, RegressorMixin, MetaEstimatorMixin):
 
-    def __init__(self, base_estimator=RegressionHoeffdingTree(), n_estimators=10, random_state=None):
+    def __init__(self, base_estimator=HoeffdingTreeRegressor(), n_estimators=10, random_state=None):
         super().__init__()
         # default values
         self.ensemble = None

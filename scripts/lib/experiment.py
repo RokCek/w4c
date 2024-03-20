@@ -465,9 +465,8 @@ class Experiment():
                                             avg[k1] += float(v1) / float(cv_k)
                             
                                 log.info('Cross-validation average:', ', '.join([f'{t[0]} = {t[1]}' for t in avg.items()]))
-                                log.info('Feature importances:', ml_model.feature_importances_)
-
-
+                                if hasattr(ml_model,'feature_importances_'):
+                                    log.info('Feature importances:', ml_model.feature_importances_)
         # end loop
 
 

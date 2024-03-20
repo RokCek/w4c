@@ -51,3 +51,14 @@ python get_water.py
 python get_weather.py
 python build_db.py
 ```
+
+## Running the experiments
+Modify/create .json config file in experiments.
+```
+cd scripts
+python run.py experiments/configfile.json
+```
+A new folder is created inside the experiments folder the new folders name is the current date
+It contains a log file and results.
+
+
