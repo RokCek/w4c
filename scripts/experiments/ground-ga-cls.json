@@ -35,7 +35,7 @@
             //     "SVR",                          // Epsilon-Support Vector Regression
             //     "MLPRegressor",                 // Multi-Layer Perceptron Regressor
             //     "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
-            //     "RegressionHoeffdingTree",      // Hoeffding Tree Regressor
+            //     "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
             //     "RegressionHAT",                // Hoeffding Adaptive Tree Regressor
             //     // "BaggingRegressionHT",          // Hoeffding Tree Bagging Regressor
             //     // "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
@@ -49,8 +49,8 @@
                 "KNeighborsClassifier",         // k-Nearest Neighbors Classifier
                 "Perceptron",                   // Perceptron Classifier
                 "GaussianNB",                   // Gaussian Naïve Bayes Classifier
-                "HoeffdingTree",                // Hoeffding Tree Classifier
-                "HAT",                          // Hoeffding Adaptive Tree Classifier
+              //Tree and HAT have errors in geneticselectioncv  "HoeffdingTree",                // Hoeffding Tree Classifier
+              //  "HAT",                          // Hoeffding Adaptive Tree Classifier
             ]
         },
         "eval_methods": {

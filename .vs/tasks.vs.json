@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-w4c-water-levels",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

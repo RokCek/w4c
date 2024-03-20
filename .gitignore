@@ -11,7 +11,7 @@ __pycache__/
 # Generated project directories
 scripts/data/water/raw/
 scripts/data/weather/raw/
-scripts/experiments/*/
+scripts/experiments/**/
 scripts/analysis/
 
 # Generated project files
@@ -24,4 +24,3 @@ scripts/data/weather/data.json
 .local/
 venv/
 scripts/analyse.py
-.vs/
