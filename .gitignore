@@ -21,6 +21,7 @@ scripts/data/weather/data.json
 
 .cache/
 .ipython/
+.vs/
 .local/
 venv/
 scripts/analyse.py
