@@ -1,4 +1,4 @@
-# Water level modelling
+# Water level modeling
 Water4Cities project...
 
 ## Software requirements
@@ -38,7 +38,7 @@ Start Jupyter notebook:
 ```
 jupyter notebook
 ```
-For google maps to work correctly, you need to set your google API key to `GOOGLE_API_KEY` environment variable:
+For Google Maps to work correctly, you need to set your Google API key to `GOOGLE_API_KEY` environment variable:
 ```
 setx GOOGLE_API_KEY your_api_key
 ```
@@ -53,12 +53,12 @@ python build_db.py
 ```
 
 ## Running the experiments
-Modify/create .json config file in experiments.
+Modify/create a .json config file in experiments.
 ```
 cd scripts
 python run.py experiments/configfile.json
 ```
-A new folder is created inside the experiments folder the new folders name is the current date
+A new folder is created inside the experiments folder. The new folder name is the current date
 It contains a log file and results.
 
 
