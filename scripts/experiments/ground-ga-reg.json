@@ -36,9 +36,11 @@
                 "MLPRegressor",                 // Multi-Layer Perceptron Regressor
                 "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
                 "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
-                "RegressionHAT",                // Hoeffding Adaptive Tree Regressor
+                "HoeffdingAdaptiveTreeRegressor",                // Hoeffding Adaptive Tree Regressor
                 // "BaggingRegressionHT",          // Hoeffding Tree Bagging Regressor
                 // "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
+                // XGBRegressor,                  // XGBoost Regressor
+                // LGBMRegressor                  // lightgbm Regressor
             ],
             // "cls": [
             //     "LogisticRegression",           // Logistic Regression
@@ -50,7 +52,9 @@
             //     "Perceptron",                   // Perceptron Classifier
             //     "GaussianNB",                   // Gaussian Naïve Bayes Classifier
             //     "HoeffdingTree",                // Hoeffding Tree Classifier
-            //     "HAT",                          // Hoeffding Adaptive Tree Classifier
+            //     "HoeffdingAdaptiveTreeClassifier",                          // Hoeffding Adaptive Tree Classifier
+            //     "LGBMClassifier",               // LightGBM Classifier
+            //     "XGBClassifier",                // XGBoost Classifier
             // ]
         },
         "eval_methods": {

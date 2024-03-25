@@ -18,7 +18,14 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor, KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.cross_decomposition import PLSRegression
-from skmultiflow.trees import HoeffdingTreeRegressor, RegressionHAT, HoeffdingTree, HAT
+# skumultiflow became river
+#from skmultiflow.trees import HoeffdingTreeRegressor, RegressionHAT, HoeffdingTree, HAT
+from river.tree import HoeffdingTreeRegressor, HoeffdingAdaptiveTreeRegressor, HoeffdingTreeClassifier, HoeffdingAdaptiveTreeClassifier
+# HAT is HoeffdingAdaptiveTreeClassifier, RegressionHAT is HoeffdingAdaptiveTreeRegressor
+
+from lightgbm import LGBMClassifier, LGBMRegressor
+from xgboost import XGBClassifier, XGBRegressor
+
 from lib.bagging import BaggingRegression
 from lib.genetic_selector import GeneticSelector
 from lib.genetic_selection_cv import GeneticSelectionCV
@@ -146,7 +153,7 @@ ML_METHODS_REG = [
         },
     },
     {
-        'name': 'RegressionHAT',
+        'name': 'HoeffdingAdaptiveTreeRegressor',
         'description': 'Hoeffding Adaptive Tree Regressor',
         'params': {
             'leaf_prediction': 'perceptron',
@@ -161,7 +168,7 @@ ML_METHODS_REG = [
         }
     },
     {
-        'name': 'BaggingRegression',
+        'name': 'BaggingRegressionHT',
         'description': 'Hoeffding Tree Bagging Regressor',
         'params': {
             'base_estimator': {
@@ -174,11 +181,11 @@ ML_METHODS_REG = [
         },
     },
     {
-        'name': 'BaggingRegression',
+        'name': 'BaggingRegressionHAT',
         'description': 'Hoeffding Adaptive Tree Bagging Regressor',
         'params': {
             'base_estimator': {
-                'name': "RegressionHAT",
+                'name': "HoeffdingAdaptiveTreeRegressor",
                 'params': {
                     'leaf_prediction': 'perceptron',
                     'random_state': "eval:random_seed"
@@ -186,6 +193,24 @@ ML_METHODS_REG = [
             },
         },
     },
+    {
+        'name': 'LinearRegression',
+        'description': 'Linear Regression',
+        'params': {},
+    },
+    # lightgbm and XGBoost
+    {
+        'name': 'LGBMRegressor',
+        'description': 'Lightgbm Regression',
+        'params': {},
+    },
+    {
+        'name': 'XGBRegressor',
+        'description': 'XGBoost Regression',
+        'params': {},
+    },
+    
+
 ]
 
 # Classification machine learning methods
@@ -276,7 +301,7 @@ ML_METHODS_CLS = [
         'params': {},
     },
     {
-        'name': 'HoeffdingTree',
+        'name': 'HoeffdingTreeClassifier',
         'description': 'Hoeffding Tree Classifier',
         'params': {},
         'params_grid': {
@@ -288,7 +313,7 @@ ML_METHODS_CLS = [
         }
     },
     {
-        'name': 'HAT',
+        'name': 'HoeffdingAdaptiveTreeClassifier',
         'description': 'Hoeffding Adaptive Tree Classifier',
         'params': {},
         'params_grid': {
@@ -299,6 +324,18 @@ ML_METHODS_CLS = [
             'nb_threshold': [0, 1, 2, 3, 4, 5],
         }
     },
+    #lightgbm
+    {
+        'name': 'LGBMClassifier',
+        'description': 'Lightgbm Classifier',
+        'params': {},
+    },
+    #XGBoost
+    {
+        'name': 'XGBClassifier',
+        'description': 'XGBoost Classifier',
+        'params': {},
+    }
 ]
 
 # Regression evaluation methods

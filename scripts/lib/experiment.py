@@ -476,6 +476,7 @@ class Experiment():
         code = 0
         try:
             self.model()
+        # If the experiment gets an error it stops and writes it in log file
         except Exception:
             code = 1
             log.print(traceback.format_exc())

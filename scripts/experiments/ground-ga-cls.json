@@ -5,9 +5,9 @@
         "water_type": "ground",
         "sensors": [
             "85065", // Lj. - Flajšmanova (Fip-1/04)
-            "85012", // Roje (V-01)
-            "85064", // Lj-Bratislavska (Brp-1a/04)
-            "85030", // Kleče (0541)
+          //  "85012", // Roje (V-01)
+          //  "85064", // Lj-Bratislavska (Brp-1a/04)
+        //    "85030", // Kleče (0541)
             // !"85054", // Bežigrad (B-01)
         ],
         "date_from": "2010-01-01",
@@ -36,21 +36,26 @@
             //     "MLPRegressor",                 // Multi-Layer Perceptron Regressor
             //     "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
             //     "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
-            //     "RegressionHAT",                // Hoeffding Adaptive Tree Regressor
+            //     "HoeffdingAdaptiveTreeRegressor",                // Hoeffding Adaptive Tree Regressor
             //     // "BaggingRegressionHT",          // Hoeffding Tree Bagging Regressor
             //     // "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
+            // XGBRegressor,                  // XGBoost Regressor
+            // LGBMRegressor                  // lightgbm Regressor
             // ],
             "cls": [
-                "LogisticRegression",           // Logistic Regression
-                "DecisionTreeClassifier",       // Decision Tree Classifier
-                "ExtraTreeClassifier",          // Extremely Randomized Tree Classifier
-                "RandomForestClassifier",       // Random Forest Classifier
-                "SVC",                          // C-Support Vector Classification
-                "KNeighborsClassifier",         // k-Nearest Neighbors Classifier
-                "Perceptron",                   // Perceptron Classifier
-                "GaussianNB",                   // Gaussian Naïve Bayes Classifier
-              //Tree and HAT have errors in geneticselectioncv  "HoeffdingTree",                // Hoeffding Tree Classifier
-              //  "HAT",                          // Hoeffding Adaptive Tree Classifier
+                //"LogisticRegression",           // Logistic Regression
+                //"LGBMClassifier",               // LightGBM Classifier
+                "XGBClassifier",                // XGBoost Classifier
+             //   "DecisionTreeClassifier",       // Decision Tree Classifier
+               // "ExtraTreeClassifier",          // Extremely Randomized Tree Classifier
+              //  "RandomForestClassifier",       // Random Forest Classifier
+              //  "SVC",                          // C-Support Vector Classification
+              //  "KNeighborsClassifier",         // k-Nearest Neighbors Classifier
+              //  "Perceptron",                   // Perceptron Classifier
+              //  "GaussianNB",                   // Gaussian Naïve Bayes Classifier
+              //Tree and HAT have errors in geneticselectioncv 
+              // "HoeffdingAdaptiveTreeClassifier",                // Hoeffding Tree Classifier
+              //  "HoeffdingAdaptiveTreeClassifier",                          // Hoeffding Adaptive Tree Classifier
             ]
         },
         "eval_methods": {
