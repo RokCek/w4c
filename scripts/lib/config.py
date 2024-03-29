@@ -202,12 +202,12 @@ ML_METHODS_REG = [
     {
         'name': 'LGBMRegressor',
         'description': 'Lightgbm Regression',
-        'params': {},
+        'params': {'n_jobs': 4},        
     },
     {
         'name': 'XGBRegressor',
         'description': 'XGBoost Regression',
-        'params': {},
+        'params': {'n_jobs': 4},
     },
     
 
@@ -328,13 +328,13 @@ ML_METHODS_CLS = [
     {
         'name': 'LGBMClassifier',
         'description': 'Lightgbm Classifier',
-        'params': {},
+        'params': {'n_jobs': 4,},
     },
     #XGBoost
     {
         'name': 'XGBClassifier',
         'description': 'XGBoost Classifier',
-        'params': {},
+        'params': {'n_jobs': 4},
     }
 ]
 
@@ -420,7 +420,8 @@ FS_METHODS = [
             'tournament_size': 3,
             'n_gen_no_change': 10,
             'caching': True,
-            'n_jobs': -1
+            #Limit CPU usage
+            'n_jobs': 1
         },
     },
     {

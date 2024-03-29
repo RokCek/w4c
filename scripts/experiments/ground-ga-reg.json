@@ -5,9 +5,9 @@
         "water_type": "ground",
         "sensors": [
             "85065", // Lj. - Flajšmanova (Fip-1/04)
-            "85012", // Roje (V-01)
-            "85064", // Lj-Bratislavska (Brp-1a/04)
-            "85030", // Kleče (0541)
+             "85012", // Roje (V-01)
+             "85064", // Lj-Bratislavska (Brp-1a/04)
+             "85030", // Kleče (0541)
             // !"85054", // Bežigrad (B-01)
         ],
         "date_from": "2010-01-01",
@@ -27,18 +27,18 @@
         "ml_methods": {
             "reg": [
                 "LinearRegression",             // Linear Regression
-                "DecisionTreeRegressor",        // Decision Tree Regressor
+                 "DecisionTreeRegressor",        // Decision Tree Regressor
                 "RandomForestRegressor",        // Random Forest Regressor
-                "GradientBoostingRegressor",    // Gradient Boosting Regressor
-                "PLSRegression",                // Partial Least Squares Regression
-                "ExtraTreeRegressor",           // Extremely Randomized Tree Regressor
-                "SVR",                          // Epsilon-Support Vector Regression
-                "MLPRegressor",                 // Multi-Layer Perceptron Regressor
-                "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
-                "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
-                "HoeffdingAdaptiveTreeRegressor",                // Hoeffding Adaptive Tree Regressor
-                // "BaggingRegressionHT",          // Hoeffding Tree Bagging Regressor
-                // "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
+                 "GradientBoostingRegressor",    // Gradient Boosting Regressor
+                 "PLSRegression",                // Partial Least Squares Regression
+                 "ExtraTreeRegressor",           // Extremely Randomized Tree Regressor
+                 "SVR",                          // Epsilon-Support Vector Regression
+                 "MLPRegressor",                 // Multi-Layer Perceptron Regressor
+                 "KNeighborsRegressor",          // k-Nearest Neighbors Regressor
+                 "HoeffdingTreeRegressor",      // Hoeffding Tree Regressor
+                 "HoeffdingAdaptiveTreeRegressor",                // Hoeffding Adaptive Tree Regressor
+                 "BaggingRegressionHT",          // Hoeffding Tree Bagging Regressor
+                 "BaggingRegressionHAT",         // Hoeffding Adaptive Tree Bagging Regressor
                 // XGBRegressor,                  // XGBoost Regressor
                 // LGBMRegressor                  // lightgbm Regressor
             ],

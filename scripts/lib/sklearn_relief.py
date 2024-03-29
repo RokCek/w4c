@@ -121,8 +121,9 @@ class Relief(BaseEstimator, TransformerMixin):
 
         for name, default_value, convf in (
                 # Param name, default param value, param conversion function
+                #Limit to 50% CPU usage
                 ('categorical', (), tuple),
-                ('n_jobs', os.cpu_count(), int),
+                ('n_jobs', (int) (os.cpu_count()/3), int),
                 ('n_iterations', 100, int),
                 ('n_features', 1, int),
                 ('random_state', None, gen_random_state)
